@@ -1,5 +1,1 @@
-streamlit>=1.36
-pypdf
-python-docx
-openpyxl
 pandas
