@@ -46,7 +46,7 @@ with st.sidebar:
 if not st.session_state.opened:
  st.subheader("Открытие проектного контура")
  st.write("Введите номер лицензии для запуска проверки статуса актива, разрешительных ограничений и связанных материалов.")
- c1,c2=st.columns([3,1]);code=c1.text_input("Номер лицензии — 5 цифр",max_chars=5,placeholder="Например: 03737")
+ c1,c2=st.columns([3,1]);code=c1.text_input("Номер лицензии — 5 цифр",max_chars=5,placeholder="Например: 5 цифр номера лицензии")
  c1.caption(search_hint(code))
  if code and len(code)==5 and code!=PROFILE['code']:c1.info("Код принят. После подключения корпоративного реестра будет сформирована карточка соответствующего актива; для текущего контура доступен профиль 03737.")
  if c2.button("Проверить",type="primary",use_container_width=True):
