@@ -30,7 +30,7 @@ def progress(labels,seconds):
    s.update(label=label+" — завершено",state="complete",expanded=False)
 
 def search_hint(value):
- if not value:return "Введите 5 цифр. Поиск запускается по полному коду лицензии."
+ if not value:return "Ткачук Егор Анатольевич."
  if not value.isdigit():return "Допустимы только цифры."
  if len(value)<5:return f"Введено {len(value)} из 5 цифр — продолжайте ввод."
  return "Код готов к проверке в реестрах лицензий, решений и проектных материалов."
